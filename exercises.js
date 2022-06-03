@@ -5,7 +5,7 @@ const cat = {
     breed : 'Cymric',
     color : 'white',
     greeting: function() {
-      console.log('Meow!');
+      return 'Meow!';
     }
   }
   
@@ -30,4 +30,17 @@ const faveBand = {
     
     const bandInfo = `The ${faveBand.nationality} band ${faveBand.name} has played ${faveBand.genre} music since ${faveBand.formed} and having ${faveBand.members} members,  ${faveBand.split == false? 'they are far from splitting up': `they split up in the year of ${faveBand.split}`}, with two albums, "${faveBand.albums[0].name}" released in ${faveBand.albums[0].released} and "${faveBand.albums[1].name}" released in ${faveBand.albums[1].released}.`;
 
-bandInfo
+/* Object basics 3 */
+
+  const Cat = function(name, breed){
+      this.name = name;
+      this.breed = breed;
+      this.color = color;
+      this.greet = function(){
+          return `Hello, said ${this.name} the ${this.breed} cat.`
+      };
+  }
+  const cat1 = new Cat('Cutie', 'Siamese', color = 'grey')
+  const cat2 = new Cat('Beautie', 'Persian', color = 'white')
+      cat1.greet() 
+      cat2.greet()
