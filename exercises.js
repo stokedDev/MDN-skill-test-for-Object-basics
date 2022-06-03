@@ -32,6 +32,30 @@ const faveBand = {
 
 /* Object basics 3 */
 
+const cat0 = {
+    name : 'Bertie',
+    breed : 'Cymric',
+    color : 'white',
+    greeting: function() {
+      return `Hello, said ${ this.name } the ${ this.breed }.`;
+    }
+  }
+  
+  const catOne = {
+    name : 'Meeki',
+    breed : 'Bengal',
+    color : 'orange',
+    greeting: function() {
+      return `Hello, said ${ this.name } the ${ this.breed }.`
+    }
+  }
+  
+  cat0.greeting();
+  catOne.greeting();
+      
+
+/* Object basics 4 */
+
   const Cat = function(name, breed){
       this.name = name;
       this.breed = breed;
