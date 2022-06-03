@@ -21,7 +21,7 @@ const [parag1, parag2] = [`The cat's name is ${ catName }.`,`The cat's color is 
 const faveBand = {
     name: 'getOver',
     nationality: 'U.S. American',
-    genre: 'Galactic',
+    genre: 'rock',
     members: 3,
     formed: 1980,
     split: false,
